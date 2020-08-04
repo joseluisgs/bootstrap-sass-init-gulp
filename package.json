@@ -4,8 +4,9 @@
   "description": "Plantilla de inicio de proyectos HTML/CSS con Bootstrap con Saass, Gulp y Browser Sync",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "gulp",
+    "clean": "rm -rf src/css && rm -rf src/fonts && rm -rf src/js",
+    "reinstall": "rm -rf node_modules && npm install"
   },
   "keywords": [],
   "author": "",
