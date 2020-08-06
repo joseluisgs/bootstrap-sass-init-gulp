@@ -1,8 +1,14 @@
 // GENERICOS
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   // font-family: "Roboto", sans-serif; // Letra por defecto
   background-color: whitesmoke;
   background-image: url('../images/fondo.jpg');
+  background-size: cover;
   padding-bottom: 70px;
   padding-top: 70px;
 }
@@ -23,9 +29,11 @@ body {
 }
 
 .footer {
-  // box-shadow: -1px -1px 5px gray;
-  // border: 0;
-   opacity: 97%; //90%
+  box-shadow: -1px -1px 5px gray;
+  opacity: 97%; //90%
+  position: absolute; // Con esto anulamos el dejarlo pegado siempre y se va al final
+  bottom: 0;
+  width: 100%;
 }
 
 /* RESOLUCIONES */
