@@ -78,11 +78,15 @@ gulp.task("font-awesome", () => {
     .src("node_modules/font-awesome/css/font-awesome.min.css")
     .pipe(gulp.dest("src/css"));
 });
+
 // fuentes
 gulp.task("fonts", () => {
-  return gulp
-    .src("node_modules/font-awesome/fonts/*")
-    .pipe(gulp.dest("src/fonts"));
+  return (
+    gulp
+      .src("node_modules/font-awesome/fonts/*")
+      .pipe(gulp.dest("src/fonts"))
+  );
 });
+
 // tareas por defecto
 gulp.task("default", gulp.series(["js", "font-awesome", "fonts", "serve"]));
