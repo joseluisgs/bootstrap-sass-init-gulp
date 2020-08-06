@@ -1,25 +1,90 @@
-$colorTexto:#06405b;
+// GENERICOS
 body {
-  background: whitesmoke;
-  color: $colorTexto;
+  // font-family: "Roboto", sans-serif; // Letra por defecto
+  background-color: whitesmoke;
+  background-image: url('../images/fondo.jpg');
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
+
+// Navbar
+.navbar {
+    box-shadow: 2px 2px 5px gray;
+    opacity: 97%; //90%
+    // Marca
+    .navbar-brand {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    // Cada item del menú
+    .nav-item .nav-link {
+        color: gainsboro;
+    }
+}
+
+.footer {
+  // box-shadow: -1px -1px 5px gray;
+  // border: 0;
+   opacity: 97%; //90%
+}
+
+/* RESOLUCIONES */
+@media (max-width: 575.98px) {
+    // Lo que es 75% ahora ocupa el 100%
+    .w-75 {
+        width: 100% !important;
+    }
+    // Sobrescribimos el padding
+    .py-5 {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+    // Los botones ocupan todo
+    .btn {
+        width: 100%;
+        margin-bottom: 1rem !important;
+    }
+    // Las listas son un bloque centrado
+    .list-inline-item {
+        display: block;
+        text-align: center;
+    }
+    // El footer se centra
+    footer {
+        text-align: center;
+    }
+    // Las listas en bloque
+    footer .list-inline-item {
+        display: inline-block;
+    }
+    // alineado a la derecha
+    footer .text-right {
+        text-align: center !important;
+    }
+    // Pasa a ser bloque
+    footer small {
+        display: block;
+    }
+}
+
+/* TEMA */
 
 /*------------------------------------
 - COLOR primary
 ------------------------------------*/
 
-$primary_t1: #67ec7e;
-$primary_t2: #39e657;
-$primary_t3: #f3fdf5;
-$primary_t4: #10a100;
-$primary_t5: #18c035;
-$primary_t6: #2ce44b;
-$primary_t7: #47e863;
-$primary_t8: #129328;
-$primary_t9: #11c102;
+$primary_t1: #7b56c3;
+$primary_t2: #613ca9;
+$primary_t3: #d6caec;
+$primary_t4: #e4ddf3;
+$primary_t5: #432975;
+$primary_t6: #5a389e;
+$primary_t7: #6740b5;
+$primary_t8: #2d1c4f;
+$primary_t9: #f0ecf8;
 
-$primary_shadow: rgba(103, 236, 126, 0.5);
-$primary_text_color_dark_bright: #212529;
+$primary_shadow: rgba(123, 86, 195, 0.5);
+$primary_text_color_dark_bright: #fff;
 
 
 .alert-primary {
@@ -163,21 +228,22 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 
+
 /*------------------------------------
 - COLOR secondary
 ------------------------------------*/
 
-$secondary_t1: #34b3ee;
-$secondary_t2: #129cdc;
-$secondary_t3: #c5e9fa;
-$secondary_t4: #ddf2fc;
-$secondary_t5: #0c6d9a;
-$secondary_t6: #1192ce;
-$secondary_t7: #13a6ea;
-$secondary_t8: #094c6b;
-$secondary_t9: #f0f9fd;
+$secondary_t1: #6d8ad6;
+$secondary_t2: #456aca;
+$secondary_t3: #e8ecf8;
+$secondary_t4: #fcfcfe;
+$secondary_t5: #2b4b9c;
+$secondary_t6: #3960c7;
+$secondary_t7: #5173ce;
+$secondary_t8: #203774;
+$secondary_t9: #203774;
 
-$secondary_shadow: rgba(52, 179, 238, 0.5);
+$secondary_shadow: rgba(109, 138, 214, 0.5);
 $secondary_text_color_dark_bright: #212529;
 
 
