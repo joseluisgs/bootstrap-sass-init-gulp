@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "gulp",
     "clean": "rm -rf src/css && rm -rf src/fonts && rm -rf src/js",
-    "reinstall": "rm -rf node_modules && npm install"
+    "reinstall": "rm -rf node_modules && npm install",
+    "dist": "npm run undist && mkdir dist && cp src/*.html dist && cp -r src/js dist && cp -r src/css dist && cp -r src/fonts dist && cp -r src/images dist",
+    "undist": "rm -rf dist"
   },
   "keywords": [],
   "author": "",

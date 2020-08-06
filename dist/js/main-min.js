@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".show-toast").click(function(){$("#myToast").toast("show")})}),document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",function(t){t.preventDefault(),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});

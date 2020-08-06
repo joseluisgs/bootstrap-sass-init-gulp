@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="joseluisgs">
+
+    <title>Bootstrap Init Plantilla</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- FA 4 Offline -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Mis Estilos -->
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <!-- MIS FUENTES -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+</head>
+
+<body>
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <!-- para que no quede pegada un container -->
+        <div class="container">
+            <!-- Logo y título -->
+            <a class="navbar-brand" href="#">
+                <img src="images/favicon.png" width="30" height="30">
+                Bootstrapt Template</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <!-- Alienamos a la inzquierda o derecha con mr-auto o ml-auto -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mr-2">
+                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#contenido">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Pie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NOTIFICACIONES-->
+    <div class="toast py-5 my-3" id="myToast" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header">
+            <strong class="mr-auto">
+                <i class="fa fa-grav"></i>
+                Hola, ¿Cómo estás?</strong>
+            <small>Hace 11 minutos.</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Bienvenido a mi plantilla de Boostrapt. <a href="#">¡Púlsame!</a>
+        </div>
+    </div>
+
+    <main id="contenido">
+        <div class="container">
+            <h1 class="display-1">Plantilla Bootstrap</h1>
+            <h2>Comienza tu web con Bootstrap</h2>
+            <p class="lead">Usa esta plantilla para agilizar tus proyectos web.<br>
+                El límite está en tu imaginación
+            </p>
+            <button type="button" class="btn btn-primary show-toast">¡Púlsame!</button>
+
+            <hr>
+            <h3 class="display-4"> Hola</h3>
+            Esto es un icono para usar
+            <i class="text-primary fab fa-earlybirds fa-7x"></i>
+            <hr>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-camera-retro"></i> Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary">Secundary</button>
+            <hr>
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>Hola Hola!</strong> Te voy a poner un icono
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer bg-dark py-3 fixed-bottom border-top">
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="mb-0">Creado por
+                        <a href="http://twitter.com/joseluisgonsan" target="_blank"
+                            class="text-light font-weight-bold">José Luis González</a>.
+                        <small>&copy; 2020</small></p>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3"><small>Síguenos en:</small></li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://twitter.com/joseluisgonsan" target="_blank" class="text-light">
+                                <i class="fa fa-twitter lead"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://www.linkedin.com/in/joseluisgonsan/" target="_blank" class="text-light">
+                                <i class="fa fa-linkedin lead"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://github.com/joseluisgs" target="_blank" class="text-light">
+                                <i class="fa fa-github lead"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-min.js" charset="utf-8"></script>
+    <script src="js/popper-min.js" charset="utf-8"></script>
+    <script src="js/bootstrap-min.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/46f8ac5714.js" crossorigin="anonymous"></script> <!-- FA 5 Online -->
+    <script src="js/main-min.js" charset="utf-8"></script> <!-- Mis Scripts -->
+</body>
+
+</html>
