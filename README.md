@@ -30,6 +30,11 @@ npm run serve
 npm run clean
 ```
 
+### Distribuir
+```
+npm run dist
+```
+
 ## Autor
 * [José Luis González Sánchez](https://twitter.com/joseluisgonsan) ![Twitter](https://img.shields.io/twitter/follow/joseluisgonsan?style=social)
 
