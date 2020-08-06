@@ -2,13 +2,17 @@
 const gulp = require("gulp"); // Requerimos Gulp
 const browserSync = require("browser-sync").create(); // Refrescamos el navegador
 const sass = require("gulp-sass"); // Convertimos Sass
+const minify = require("gulp-minify");
 
 // Tarea para crear los ficheros Sass
 gulp.task("sass", () => {
   // Buscamos los fihceros fuentes de Bootstrap originales y los nuestros
   return (
     gulp
-      .src(["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"])
+      .src([
+        "node_modules/bootstrap/scss/bootstrap.scss",
+        "src/scss/*.scss",
+      ])
       // Lo sacamos comprimidos en la carpeta src/css
       .pipe(sass({ outputStyle: "compressed" }))
       .pipe(gulp.dest("src/css"))
@@ -21,21 +25,27 @@ gulp.task("js", () => {
   // Buscamos los ficheros JS que necesitamos y los propios
   return gulp
     .src([
-      "node_modules/bootstrap/dist/js/bootstrap.min.js",
-      "node_modules/jquery/dist/jquery.min.js",
-      "node_modules/popper.js/dist/umd/popper.min.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js",
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/popper.js/dist/umd/popper.js",
       "src/scripts/*.js",
     ])
+    .pipe(
+      minify({
+        noSource: true,
+        ignoreFiles: [".combo.js", ".min.js"],
+      })
+    )
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.stream());
 });
 
 // Servidor para detectar los cambios solo en sass o sass y js
 // gulp.task("serve", gulp.parallel('sass', 'js'), () => {
-gulp.task('serve', gulp.series('sass',  function(done) {
+gulp.task('serve', gulp.series('sass', function (done) {
   // indicamos donde debe iniciarse
   browserSync.init({
-     server: "./src"  
+    server: "./src"
   });
 
   // Detecta cambios y ejecuta la tarea para scss
@@ -49,7 +59,12 @@ gulp.task('serve', gulp.series('sass',  function(done) {
   );
 
   // Detecta cambios y ejecuta la tarea para mis scripts js, opcional
-  // gulp.watch(["src/scripts/*.js"], ["js"]);
+  gulp.watch(
+    [
+      "src/scripts/*.js"
+    ],
+    gulp.series('js')
+  );
 
   // si hay cambios en html...
   gulp.watch("src/*.html").on("change", browserSync.reload);
