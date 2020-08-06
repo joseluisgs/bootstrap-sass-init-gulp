@@ -5,3 +5,4 @@ src/fonts
 src/js
 .DS_Store
 dist/
+dist/*
