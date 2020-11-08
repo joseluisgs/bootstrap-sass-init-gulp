@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-sass-init-gulp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plantilla de inicio de proyectos HTML/CSS con Bootstrap con Saass, Gulp y Browser Sync",
   "main": "gulp.js",
   "scripts": {
@@ -10,8 +10,17 @@
     "reinstall": "rm -rf node_modules && npm install"
   },
   "keywords": ["Gulp", "Sass", "Bootstrap", "Font Awesome"],
-  "author": "",
-  "license": "ISC",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluisgs/bootstrap-sass-init-gulp.git"
+  },
+  "author": "joseluisgs",
+  "twitter": "https://twitter.com/joseluisgonsan",
+  "bugs": {
+    "url": "https://github.com/joseluisgs/bootstrap-sass-init-gulp/issues"
+  },
+  "homepage": "https://github.com/joseluisgs/bootstrap-sass-init-gulp#readme",
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.0",

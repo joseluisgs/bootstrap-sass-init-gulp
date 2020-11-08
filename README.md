@@ -5,8 +5,9 @@ Plantilla para crear proyectos web Bootstrap con HTML5/CSS3 usando Saas y temas 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-%20Ready-blue)](https://getbootstrap.com/)
 [![Saas](https://img.shields.io/badge/Sass-%20Ready-ff69b4)](https://sass-lang.com/)
 [![Gulp](https://img.shields.io/badge/Gulp-%20Ready-cf4647)](https://gulpjs.com/)
-[![Licence](https://img.shields.io/github/license/joseluisgs/NodeMonRest)](https://github.com/joseluisgs/NodeMonRest/blob/master/LICENSE)
-![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bootstrap-sass-init)
+[![NPM](https://img.shields.io/badge/NPM-%20Ready-CE0000)](https://www.npmjs.com/package/bootstrap-sass-init-gulp)
+[![Licence](https://img.shields.io/github/license/joseluisgs/bootstrap-sass-init-gulp)](https://github.com/joseluisgs/bootstrap-sass-init-gulp/blob/master/LICENSE)
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bootstrap-sass-init-gulp)
 
 ## Acerca de
 
@@ -19,6 +20,7 @@ Platilla automatiazada para crear sitios web con Bootstrapt y cambiar su aparien
 ```bash
 $npm install
 ```
+
 #### Modo de desarrollo y live server
 
 ```bash
