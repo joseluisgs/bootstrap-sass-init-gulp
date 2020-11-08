@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "reinstall": "rm -rf node_modules && npm install"
   },
-  "keywords": [],
+  "keywords": ["Gulp", "Sass", "Bootstrap", "Font Awesome"],
   "author": "",
   "license": "ISC",
   "dependencies": {

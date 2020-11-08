@@ -1,6 +1,6 @@
 # Bootstrap - Sass - Init - Gulp
 
-Plantilla para crear proyectos web Bootstrap con HTML5/CSS3 usando Saas y temas propios optimizando la tarea con Gulp
+Plantilla para crear proyectos web Bootstrap con HTML5/CSS3 usando Saas y temas propios optimizando la tarea con Gulp incluyendo Font Awesome.
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-%20Ready-blue)](https://getbootstrap.com/)
 [![Saas](https://img.shields.io/badge/Sass-%20Ready-ff69b4)](https://sass-lang.com/)
@@ -10,7 +10,7 @@ Plantilla para crear proyectos web Bootstrap con HTML5/CSS3 usando Saas y temas 
 
 ## Acerca de
 
-Platilla automatiazada para crear sitios web con Bootstrapt y cambiar su apariencia con Sass. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/).
+Platilla automatiazada para crear sitios web con Bootstrapt y cambiar su apariencia con Sass. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido [Font Awesome](https://fontawesome.com/).
 
 ## Funcionamiento con npm:
 
