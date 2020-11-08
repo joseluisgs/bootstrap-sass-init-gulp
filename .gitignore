@@ -1,8 +1,4 @@
 # Ignoramos para git
-node_modules/
-src/css
-src/fonts
-src/js
 .DS_Store
-dist/
-dist/*
+dist
+node_modules

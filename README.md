@@ -25,10 +25,10 @@ Se ha usado:
 ```bash
 $npm install
 ```
-
 #### Modo de desarrollo y live server
 
 ```bash
+$npm start
 $npm run serve
 ```
 
@@ -36,12 +36,6 @@ $npm run serve
 
 ```bash
 $npm run clean
-```
-
-#### Generación de ficheros de producción
-
-```bash
-$npm run dist
 ```
 
 ## Autor

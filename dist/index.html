@@ -8,13 +8,15 @@
 
     <title>Bootstrap Init Plantilla</title>
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- FA 4 Offline -->
-    <link rel="stylesheet" href="css/main.css"> <!-- Mis Estilos -->
+    <!-- ESTILOS: Mis estilos, Bootstrap -->
+    <link rel="stylesheet" href="assets/css/estilos.css"> 
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> Si no lo he minimzado y fusionado -->
+    
+    <!-- FONT AWASOME-->
+    <link href="assets/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
 
     <!-- MIS FUENTES -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
@@ -28,7 +30,7 @@
         <div class="container">
             <!-- Logo y título -->
             <a class="navbar-brand" href="#">
-                <img src="images/favicon.png" width="30" height="30">
+                <img src="assets/images/favicon.png" width="30" height="30">
                 Bootstrapt Template</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +40,10 @@
                 <!-- Alienamos a la inzquierda o derecha con mr-auto o ml-auto -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mr-2">
-                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="#contenido">Contenido</a>
+                        <a class="nav-link" href="contenido.html">Contenido</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Pie</a>
@@ -55,7 +57,7 @@
     <div class="toast" id="myToast" style="position: absolute; top: 50; right: 0;">
         <div class="toast-header">
             <strong class="mr-auto">
-                <i class="fa fa-grav"></i>
+                <i class="fab fa-grav"></i>
                 Hola, ¿Cómo estás?</strong>
             <small>Hace 11 minutos.</small>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
@@ -63,7 +65,7 @@
             </button>
         </div>
         <div class="toast-body">
-            Bienvenido a mi plantilla de Boostrapt. <a href="#">¡Púlsame!</a>
+            Bienvenido a plantilla de Boostrapt. <a href="#">¡Púlsame!</a>
         </div>
     </div>
 
@@ -74,13 +76,15 @@
             <h2>Comienza tu web con Bootstrap</h2>
             <p class="lead">Usa esta plantilla para agilizar tus proyectos web.<br>
                 El límite está en tu imaginación
+                Y en todo lo demas. Simplemente codifica.
             </p>
+            <p>Con Gulp la cosa es automática. Escribes y vas viendo los cambios, procesa el sass y html directamente</p>
             <button type="button" class="btn btn-primary show-toast">¡Púlsame!</button>
 
             <hr>
             <h3 class="display-4"> Hola</h3>
             Esto es un icono para usar
-            <i class="text-primary fab fa-earlybirds fa-7x"></i>
+            <i class="text-primary fa fa-headphones fa-3x"></i>
             <hr>
             <button type="button" class="btn btn-primary">
                 <i class="fa fa-camera-retro"></i> Primary
@@ -110,20 +114,20 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item mr-3"><small>Síguenos en:</small></li>
+                        <li class="list-inline-item mr-3"><small>Sígueme en:</small></li>
                         <li class="list-inline-item mr-3">
                             <a href="https://twitter.com/joseluisgonsan" target="_blank" class="text-light">
-                                <i class="fa fa-twitter lead"></i>
+                                <i class="fab fa-twitter lead"></i>
                             </a>
                         </li>
                         <li class="list-inline-item mr-3">
                             <a href="https://www.linkedin.com/in/joseluisgonsan/" target="_blank" class="text-light">
-                                <i class="fa fa-linkedin lead"></i>
+                                <i class="fab fa-linkedin lead"></i>
                             </a>
                         </li>
                         <li class="list-inline-item mr-3">
                             <a href="https://github.com/joseluisgs" target="_blank" class="text-light">
-                                <i class="fa fa-github lead"></i>
+                                <i class="fab fa-github lead"></i>
                             </a>
                         </li>
                     </ul>
@@ -133,11 +137,13 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="js/jquery-min.js" charset="utf-8"></script>
-    <script src="js/popper-min.js" charset="utf-8"></script>
-    <script src="js/bootstrap-min.js" charset="utf-8"></script>
-    <script src="https://kit.fontawesome.com/46f8ac5714.js" crossorigin="anonymous"></script> <!-- FA 5 Online -->
-    <script src="js/main-min.js" charset="utf-8"></script> <!-- Mis Scripts -->
+    <script src="assets/js/jquery-min.js" charset="utf-8"></script>
+    <script src="assets/js/popper-min.js" charset="utf-8"></script>
+    <script src="assets/js/bootstrap-min.js" charset="utf-8"></script>
+    <script src="assets/js/main-min.js" charset="utf-8"></script> <!-- Mis Scripts -->
+
+    <!-- <script src="https://kit.fontawesome.com/46f8ac5714.js" crossorigin="anonymous"></script> <!-- FA 5 Online -->
+
 </body>
 
 </html>

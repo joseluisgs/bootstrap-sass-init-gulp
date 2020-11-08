@@ -1,21 +1,21 @@
 {
-  "name": "bootstrap-sass-init",
+  "name": "bootstrap-sass-init-gulp",
   "version": "1.0.0",
   "description": "Plantilla de inicio de proyectos HTML/CSS con Bootstrap con Saass, Gulp y Browser Sync",
-  "main": "index.js",
+  "main": "gulp.js",
   "scripts": {
+    "start": "gulp",
     "serve": "gulp",
-    "clean": "rm -rf src/css && rm -rf src/fonts && rm -rf src/js",
-    "reinstall": "rm -rf node_modules && npm install",
-    "dist": "npm run undist && mkdir dist && cp src/*.html dist && cp -r src/js dist && cp -r src/css dist && cp -r src/fonts dist && cp -r src/images dist",
-    "undist": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "reinstall": "rm -rf node_modules && npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.0",
-    "font-awesome": "^4.7.0",
+    "del": "^6.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },
@@ -23,6 +23,8 @@
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.1.0"
   }
