@@ -1,4 +1,8 @@
 // GENERICOS
+// Mis Variables
+$color_fondo: whitesmoke;
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -7,7 +11,7 @@ html {
 
 body {
   // font-family: "Roboto", sans-serif; // Letra por defecto
-  background-color: whitesmoke;
+  background-color: $color_fondo;
   background-image: url('../images/fondo.jpg');
   background-size: cover;
   padding-bottom: 70px;
