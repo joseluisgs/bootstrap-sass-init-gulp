@@ -1,4 +1,5 @@
 # Ignoramos para git
 .DS_Store
 dist
+dist/*
 node_modules
