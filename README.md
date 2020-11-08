@@ -14,8 +14,6 @@ Platilla automatiazada para crear sitios web con Bootstrapt y cambiar su aparien
 Se ha usado:
 
 - [Gulp](https://gulpjs.com/): Para automatizar tareas.
-- [FontAwasome](https://fontawesome.com): Fuentes e iconos.
-- [BrwoserSync](https://www.browsersync.io/): Servidor para ir viendo y visualizando los cambios automatizados.
 - [bootstrap4-color-generator](https://lingtalfi.com/bootstrap4-color-generator): Crear temas de Bootstrapt 4.
 
 ## Funcionamiento con npm:
