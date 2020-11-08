@@ -1,4 +1,4 @@
-# Bootstrap - Sass
+# Bootstrap - Sass - Init - Gulp
 
 Plantilla para crear proyectos web Bootstrap con HTML5/CSS3 usando Saas y temas propios optimizando la tarea con Gulp
 
