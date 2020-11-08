@@ -32,13 +32,13 @@ $npm install
 $npm run serve
 ```
 
-### Lompieza de assets y directorio de distribición
+#### Limpieza de assets y directorio de distribición
 
 ```bash
 $npm run clean
 ```
 
-### Generaión de ficheros de producción
+#### Generación de ficheros de producción
 
 ```bash
 $npm run dist
